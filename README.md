@@ -18,8 +18,10 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 
 ## Automated Checks
 
-### Product key is valid
+### `Product key is valid`
 This check analyzes the configured product key from the registry to ensure that is a valid key. If a key has not been entered via the Admin Configuration tool or has been tampered with directly in the registry, this check will fail.
 
 #### How to fix
 Use the Admin Configuration Tool to enter a valid product key. You can obtain a key by signing into [www.abproportal.com](https://www.abproportal.com).
+
+
