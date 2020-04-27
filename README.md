@@ -22,10 +22,10 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 
 
 ## Automated Checks
-The configuration checker tool checks for the following common issues.
+The configuration checker tool checks for the following common issues. Please note that the fix for all of the following will require administrative privileges on the system.
 
 ### `Product key is valid`
-This check analyzes the configured product key from the registry to ensure that is a valid key. If a key has not been entered via the administrator Configuration tool or has been tampered with directly in the registry, this check will fail.
+This check analyzes the configured product key from the registry to ensure that is a valid key. If a key has not been entered via the administrator configuration tool or has been tampered with directly in the registry, this check will fail.
 
 #### How to fix
 Use the administrator configuration tool to enter a valid product key. You can obtain a key by signing into [www.abproportal.com](https://www.abproportal.com).
@@ -66,6 +66,22 @@ __Method 2 (Command prompt, advanced)__
 2. Enter the following command to start the AB Express service `sc start abexpressclient`
 
 
+#### `Windows service is configured to automatically start`
+The AB Express service needs to be configured to automatically start when the system starts.
 
+#### How to fix
+To fix this, do the following (requires administrator privileges):
+
+1. Press the Windows key
+2. Run "services.msc".
+3. Right click on the service named **AB Express Client Service** and select Properties.
+4. Change the **Startup Type** to **Automatic**
+5. Start the service if it is not already started
+
+#### `Agent has been configured`
+This check verifies that the AB Express service has been configured with the administration tool.
+
+#### How to fix
+Use the administrator configuration tool to fully configure the AB Express service.
 
 
