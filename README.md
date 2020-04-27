@@ -1,5 +1,5 @@
 # abexpress-debugtool
-This is the temporary home for the AB Express configuration checker tool. It looks for common issues with AB Express installations and configurations and provides suggested fixes.
+This is the temporary home for the AB Express configuration checker tool. It looks for common issues with AB Express installations and configurations and provides suggested fixes. This site will always contain the latest version of the configuration checker tool.
 
 ![Tool screenshot](tool-screenshot.png)
 
@@ -83,5 +83,41 @@ This check verifies that the AB Express service has been configured with the adm
 
 #### How to fix
 Use the administrator configuration tool to fully configure the AB Express service.
+
+### `Configured monitoring folder exists`
+AB Express can be configured to monitor custom folders. This check will fail when AB Express has been configured in this manner, but the actual folder/directory does not exist on the system.
+
+#### How to fix
+Run the configuration checker tool and click on the failed check. The tool will show you a list of folders that have failed this check. Ensure that the listed folders exist on the system.
+
+### `Network connection to REST API v1 and v2`
+These checks verify that the system is able to make a network connection to the AB Express REST API servers. Being able to do so is critical for the successful operation of the AB Express service.
+
+#### How to fix
+Fixing this issue will likely require the assistance of the center's network IT team. If the network connection is being blocked, it could be due to one or more of the following issues:
+
+- Blocked at the perimeter firewall
+- Blocked by anti-malware software
+- The center's network is not configured to trust the signing certificate authority of the AB Express TLS certificate
+
+Please ask the center's network IT team to help enable external access to the AB Express REST API servers. You can send the following description to the center's network IT team and they will understand what to do:
+
+`Please enable outbound or egress access to the abexpress-api.advancedbionics.com and dx-api.ironbox.app on TCP port 443`
+
+### `System supports TLS 1.2 security protocol`
+The AB Express service uses the transport-layer security (TLS) protocol version 1.2 for securely sending data. This is the industry standard and 1.2 is the minimum version supported. If the system does not appear to support this protocol, then this check will fail.
+
+Often times a system will fail this check due to the following:
+- Missing latest security patches
+- Operating system is too old (TLS is automatically supported on Windows 8 and higher)
+- It has been disabled by network administrators explicitly
+- The minimum version of .NET Framework 4.6.1 is missing
+
+#### How to fix
+Fixing this issue will likely require the assistance of the center's network IT team. Please direct them to the following link:
+
+[How to enable TLS on client machines](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi)
+
+
 
 
