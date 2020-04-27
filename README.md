@@ -27,32 +27,32 @@ The configuration checker tool checks for the following common issues. Please no
 ### `Product key is valid`
 This check analyzes the configured product key from the registry to ensure that is a valid key. If a key has not been entered via the administrator configuration tool or has been tampered with directly in the registry, this check will fail.
 
-#### How to fix
+#### How to fix:
 Use the administrator configuration tool to enter a valid product key. You can obtain a key by signing into [www.abproportal.com](https://www.abproportal.com).
 
 
 ### `Workstation name is configured`
 Each AB Express requires a workstation name. It can be anything, such as the name of the computer (recommended). This is entered in using the administrator configuration tool.
 
-#### How to fix
+#### How to fix:
 Use the administrator configuration tool to enter a valid workstation name.
 
 ### `Center name is configured`
 AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA
 
-#### How to fix
+#### How to fix:
 Use the administrator configuration tool to enter a center name.
 
 ### `Windows service installed`
 This check verifies that the AB Express Windows service is installed on the system.
 
-#### How to fix
+#### How to fix:
 Install or re-install AB Express
 
 ### `Windows service is running`
 This check verifies that the AB Express Windows service is installed on the system and running.
 
-#### How to fix
+#### How to fix:
 There are a few ways to restart the Windows service (note that administrator privileges is required for all fix methods):
 
 __Method 1 (Windows UI, Recommended)__
@@ -69,7 +69,7 @@ __Method 2 (Command prompt, advanced)__
 ### `Windows service is configured to automatically start`
 The AB Express service needs to be configured to automatically start when the system starts.
 
-#### How to fix
+#### How to fix:
 To fix this, do the following (requires administrator privileges):
 
 1. Press the Windows key
@@ -81,19 +81,19 @@ To fix this, do the following (requires administrator privileges):
 ### `Agent has been configured`
 This check verifies that the AB Express service has been configured with the administration tool.
 
-#### How to fix
+#### How to fix:
 Use the administrator configuration tool to fully configure the AB Express service.
 
 ### `Configured monitoring folder exists`
 AB Express can be configured to monitor custom folders. This check will fail when AB Express has been configured in this manner, but the actual folder/directory does not exist on the system.
 
-#### How to fix
+#### How to fix:
 Run the configuration checker tool and click on the failed check. The tool will show you a list of folders that have failed this check. Ensure that the listed folders exist on the system.
 
 ### `Network connection to REST API v1 and v2`
 These checks verify that the system is able to make a network connection to the AB Express REST API servers. Being able to do so is critical for the successful operation of the AB Express service.
 
-#### How to fix
+#### How to fix:
 Fixing this issue will likely require the assistance of the center's network IT team. If the network connection is being blocked, it could be due to one or more of the following issues:
 
 - Blocked at the perimeter firewall
@@ -113,11 +113,33 @@ Often times a system will fail this check due to the following:
 - It has been disabled by network administrators explicitly
 - The minimum version of .NET Framework 4.6.1 is missing
 
-#### How to fix
+#### How to fix:
 Fixing this issue will likely require the assistance of the center's network IT team. Please direct them to the following link:
 
 [How to enable TLS on client machines](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi)
 
+### `Read dynamic configuration from REST API`
+The AB Express service reads certain settings from the REST API. This check will typically fail if the system is unable to communicate with either v1 or v2 of the AB Express REST API service.
+
+#### How to fix:
+Please see the resolution for `Network connection to REST API v1 and v2`.
+
+
+### `Can resolve REST API hostname using DNS`
+In order for a system to communicate with the AB Express service, it needs to be able to *resolve* the hostname of the AB Express service. This is done using the local network DNS service.
+
+#### How to fix:
+You will need to work with the network IT team. You can let them know the following:
+
+`The system is unable to resolve the DNS hostnames for either abexpress-api.advancedbionics.com or dx-api.ironbox.app`
+
+### `Minimum version of .NET Framework installed`
+AB Express requires Microsoft .NET Framework 4.6.1 or higher to function. The the .NET Framework is a set of libraries and functions developers use to build applications with. Typically this library is present on all Windows systems, but it may have been uninstalled or the version of Windows on the machine is extremely old.
+
+#### How to fix:
+Please install the latest version of the .NET Framework from [Microsoft .NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework).
+
+You may need to work with the center's IT team to do this (recommended) as they will have software policies that need to be followed.
 
 
 
