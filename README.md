@@ -32,13 +32,13 @@ Each AB Express requires a workstation name. It can be anything, such as the nam
 #### How to fix
 Use the administrator configuration tool to enter a valid workstation name.
 
-#### `Center name is configured`
+### `Center name is configured`
 AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA
 
 #### How to fix
 Use the administrator configuration tool to enter a center name.
 
-#### `Windows service installed`
+### `Windows service installed`
 This check verifies that the AB Express Windows service is installed on the system.
 
 #### How to fix
