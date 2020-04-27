@@ -108,7 +108,7 @@ Please ask the center's network IT team to help enable external access to the AB
 
 You can manually verify connectivity by:
 1. Open any modern browser (Chrome, Firefox, Edge).
-2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) and you should see a screen like the following:
+2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) and you should see a screen like the following with no errors:
 
 ![Tool screenshot](ping-confirm.png)
 
@@ -151,4 +151,12 @@ Please install the latest version of the .NET Framework from [Microsoft .NET Fra
 You may need to work with the center's IT team to do this (recommended) as they will have software policies that need to be followed.
 
 
+## I still need help!
+If after trying suggested fixes you are still unable to get AB Express to function, pleas contact the AB Express team. Before you do so, please run the following steps which will provide the team with the necessary diagnostics information:
 
+1. Start the configuration checker tool
+2. Click the **Run** button to allow the tool to analyze the system.
+3. Click the Copy button, this will convenently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
+4. Send the AB Express the diagnostics information
+
+![Tool screenshot](copydiaginfo.png)
