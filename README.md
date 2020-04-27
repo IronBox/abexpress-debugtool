@@ -8,8 +8,8 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
 
 1. Click on the green **Clone or download** button on the top-right
-2. Select **Download ZIP**
-3. Unzip the ZIP archive into a folder on the system that you troubleshooting AB Express on
+2. Select **Download ZIP**, this will download this entire guide and the tool.
+3. Unzip the ZIP archive into a folder on the system that you troubleshooting AB Express on. The tool will be the folder `configchecktool`.
 4. Run **ABExpressConfigCheckerTool.exe**
 5. Click the Run button to start configuration checking
 
