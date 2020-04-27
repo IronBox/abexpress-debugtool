@@ -49,7 +49,7 @@ This check verifies that the AB Express Windows service is installed on the syst
 #### How to fix
 Install or re-install AB Express
 
-#### `Windows service is running`
+### `Windows service is running`
 This check verifies that the AB Express Windows service is installed on the system and running.
 
 #### How to fix
@@ -66,7 +66,7 @@ __Method 2 (Command prompt, advanced)__
 2. Enter the following command to start the AB Express service `sc start abexpressclient`
 
 
-#### `Windows service is configured to automatically start`
+### `Windows service is configured to automatically start`
 The AB Express service needs to be configured to automatically start when the system starts.
 
 #### How to fix
@@ -78,7 +78,7 @@ To fix this, do the following (requires administrator privileges):
 4. Change the **Startup Type** to **Automatic**
 5. Start the service if it is not already started
 
-#### `Agent has been configured`
+### `Agent has been configured`
 This check verifies that the AB Express service has been configured with the administration tool.
 
 #### How to fix
