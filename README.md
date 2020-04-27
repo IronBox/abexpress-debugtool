@@ -152,11 +152,11 @@ You may need to work with the center's IT team to do this (recommended) as they 
 
 
 ## I still need help!
-If after trying suggested fixes you are still unable to get AB Express to function, pleas contact the AB Express team. Before you do so, please run the following steps which will provide the team with the necessary diagnostics information:
+If after trying suggested fixes you are still unable to get AB Express to function, please contact the AB Express team. Before you do, please run the following steps which will provide the team with the necessary diagnostics information:
 
 1. Start the configuration checker tool
 2. Click the **Run** button to allow the tool to analyze the system.
 3. Click the Copy button, this will convenently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
-4. Send the AB Express the diagnostics information
+4. Send the AB Express team the diagnostics information
 
 ![Tool screenshot](copydiaginfo.png)
