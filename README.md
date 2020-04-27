@@ -104,10 +104,10 @@ Fixing this issue will likely require the assistance of the center's network IT 
 
 Please ask the center's network IT team to help enable external access to the AB Express REST API servers. You can send the following description to the center's network IT team and they will understand what to do:
 
-`Please enable outbound or egress access to the abexpress-api.advancedbionics.com and dx-api.ironbox.app on TCP port 443`
+`The system where AB Express is installed on does not appear to be able to connect to the following REST API servers: abexpress-api.advancedbionics.com and dx-api.ironbox.app on TCP port 443 (TLS 1.2).`
 
 You can manually verify connectivity by:
-1. Open any modern browser (Chrome, Firefox, Edge).
+1. Open any modern browser, such as Chrome, Firefox, Edge. Please note that Internet Explorer is not recommended as it is no longer supported.
 2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) and you should see a screen like the following with no errors:
 
 ![Tool screenshot](ping-confirm.png)
