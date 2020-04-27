@@ -15,6 +15,8 @@ This site is packaged with the latest version of the AB Express configuration to
 
 Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue.
 
+![Tool screenshot](suggested-fix.png)
+
 ### Requirements
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
 
