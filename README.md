@@ -104,6 +104,13 @@ Please ask the center's network IT team to help enable external access to the AB
 
 `Please enable outbound or egress access to the abexpress-api.advancedbionics.com and dx-api.ironbox.app on TCP port 443`
 
+You can manually verify connectivity by:
+1. Open any modern browser (Chrome, Firefox, Edge).
+2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) and you should see a screen like the following:
+
+![Tool screenshot](ping-confirm.png)
+
+
 ### `System supports TLS 1.2 security protocol`
 The AB Express service uses the transport-layer security (TLS) protocol version 1.2 for securely sending data. This is the industry standard and 1.2 is the minimum version supported. If the system does not appear to support this protocol, then this check will fail.
 
