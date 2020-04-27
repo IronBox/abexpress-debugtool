@@ -17,23 +17,50 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 
 
 ## Automated Checks
-The configuration checker tool 
+The configuration checker tool checks for the following common issues.
 
 ### `Product key is valid`
 This check analyzes the configured product key from the registry to ensure that is a valid key. If a key has not been entered via the administrator Configuration tool or has been tampered with directly in the registry, this check will fail.
 
 #### How to fix
-Use the Admin Configuration Tool to enter a valid product key. You can obtain a key by signing into [www.abproportal.com](https://www.abproportal.com).
+Use the administrator configuration tool to enter a valid product key. You can obtain a key by signing into [www.abproportal.com](https://www.abproportal.com).
 
 
 ### `Workstation name is configured`
 Each AB Express requires a workstation name. It can be anything, such as the name of the computer (recommended). This is entered in using the administrator configuration tool.
 
 #### How to fix
-Use the Admin Configuration Tool to enter a valid workstation name key.
+Use the administrator configuration tool to enter a valid workstation name.
 
 #### `Center name is configured`
-AB Express requires a center name to be configured. This should be the 
+AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA
+
+#### How to fix
+Use the administrator configuration tool to enter a center name.
+
+#### `Windows service installed`
+This check verifies that the AB Express Windows service is installed on the system.
+
+#### How to fix
+Install or re-install AB Express
+
+#### `Windows service is running`
+This check verifies that the AB Express Windows service is installed on the system and running.
+
+#### How to fix
+There are a few ways to restart the Windows service (note that administrator privileges is required for all fix methods):
+
+__Method 1 (Windows UI, Recommended)__
+1. Press the Windows key
+2. Run "services.msc".
+3. Right click on the service named **AB Express Client Service** and click Start
+
+
+__Method 2 (Command prompt, advanced)__
+1. Open a command prompt
+2. Enter the following command to start the AB Express service `sc start abexpressclient`
+
+
 
 
 
