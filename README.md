@@ -64,8 +64,10 @@ __Method 1 (Windows UI, Recommended)__
 
 
 __Method 2 (Command prompt, advanced)__
-1. Open a command prompt
-2. Enter the following command to start the AB Express service `sc start abexpressclient`
+1. Press the Windows key
+2. Type `cmd`
+3. Right-click the Command Prompt app and select Run as Administrator
+4. Enter the following command to start the AB Express service `sc start abexpressclient`
 
 
 ### `Windows service is configured to automatically start`
