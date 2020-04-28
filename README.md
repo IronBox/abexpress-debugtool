@@ -6,7 +6,7 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ## Installation and Usage
 ````
-The latest version of the tool is 1.0.0.5
+The latest version of the tool is 1.0.0.6
 ````
 
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
@@ -88,6 +88,18 @@ To fix this, do the following (requires administrator privileges):
 3. Right click on the service named **AB Express Client Service** and select Properties.
 4. Change the **Startup Type** to **Automatic**
 5. Start the service if it is not already started
+
+### `Windows service uses correct startup account`
+The AB Express service requires LocalSystem as its startup account, because it requires special privileges for accessing and modifying certain AB SoundWave and other backup files.
+
+#### How to fix:
+To fix this, do the following (requires administrator privileges):
+
+1. Press the Windows key
+2. Run "services.msc".
+3. Right click on the service named **AB Express Client Service** and select Properties.
+4. Change the **Logon as** to **System or LocalSystem**
+5. Restart the service
 
 ### `Agent has been configured`
 This check verifies that the AB Express service has been configured with the administration tool.
