@@ -154,6 +154,8 @@ Please install the latest version of the .NET Framework from [Microsoft .NET Fra
 
 You may need to work with the center's IT team to do this (recommended) as they will have software policies that need to be followed.
 
+## Known Issues
+- The 1.0.0.73 AB Express client installer is 64-bit only, and will not install on Windows 32-bit (this issue is fixed for future versions of AB Express)
 
 ## I still need help!
 If after trying suggested fixes you are still unable to get AB Express to function, please contact the AB Express team. Before you do, please run the following steps which will provide the team with the necessary diagnostics information:
