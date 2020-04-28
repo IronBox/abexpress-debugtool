@@ -19,7 +19,7 @@ This site is packaged with the latest version of the AB Express configuration to
 
 Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue.
 
-![Tool screenshot](suggested-fix.png)
+![Tool with suggested fix screenshot](suggested-fix.png)
 
 ### Requirements
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
@@ -118,7 +118,7 @@ You can manually verify connectivity by:
 1. Open any modern browser, such as Chrome, Firefox, Edge. Please note that Internet Explorer is not recommended as it is no longer supported.
 2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress)   (REST API v2) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) (REST API v1) and you should see a screen like the following with no errors:
 
-![Tool screenshot](ping-confirm.png)
+![Network access confirmation screenshot](ping-confirm.png)
 
 
 ### `System supports TLS 1.2 security protocol`
@@ -161,6 +161,8 @@ You may need to work with the center's IT team to do this (recommended) as they 
 ## Known Issues
 - The 1.0.0.73 AB Express client installer is 64-bit only, and will not install on Windows 32-bit (this issue is fixed for future versions of AB Express)
 
+![Tool installer screenshot](64bitinstaller.png)
+
 ## I still need help!
 If after trying suggested fixes you are still unable to get AB Express to function, please contact the AB Express team. Before you do, please run the following steps which will provide the team with the necessary diagnostics information:
 
@@ -169,4 +171,4 @@ If after trying suggested fixes you are still unable to get AB Express to functi
 3. Click the Copy button, this will convenently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
 4. Send the AB Express team the diagnostics information
 
-![Tool screenshot](copydiaginfo.png)
+![Tool copy screenshot](copydiaginfo.png)
