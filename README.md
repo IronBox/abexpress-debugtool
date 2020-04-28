@@ -3,6 +3,13 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ![Tool screenshot](tool-screenshot.png)
 
+## Quick Links
+- [Installation and Usage]()
+- [Automated Checks]()
+- [Known Issues]()
+- [I need more help]()
+
+
 
 ## Installation and Usage
 ````
@@ -176,7 +183,7 @@ You may need to work with the center's IT team to do this (recommended) as they 
 
 ![Tool installer screenshot](64bitinstaller.png)
 
-## I still need help!
+## I need more help!
 If after trying suggested fixes you are still unable to get AB Express to function, please contact the AB Express team. Before you do, please run the following steps which will provide the team with the necessary diagnostics information:
 
 1. Start the configuration checker tool
