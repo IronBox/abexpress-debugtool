@@ -59,14 +59,15 @@ There are a few ways to restart the Windows service (note that administrator pri
 
 __Method 1 (Windows UI, Recommended)__
 1. Press the Windows key
-2. Run "services.msc".
-3. Right click on the service named **AB Express Client Service** and click Start
+2. Type `services.msc`
+3. Right click on the Services app and select `Run as administrator`
+4. Right click on the service named **AB Express Client Service** and click Start
 
 
 __Method 2 (Command prompt, advanced)__
 1. Press the Windows key
 2. Type `cmd`
-3. Right-click the Command Prompt app and select Run as Administrator
+3. Right-click the Command Prompt app and select `Run as administrator`
 4. Enter the following command to start the AB Express service `sc start abexpressclient`
 
 
