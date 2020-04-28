@@ -4,10 +4,10 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 ![Tool screenshot](tool-screenshot.png)
 
 ## Quick Links
-- [Installation and Usage]()
-- [Automated Checks]()
-- [Known Issues]()
-- [I need more help]()
+- [Installation and Usage](#installation-and-usage)
+- [Automated Checks](#automated-checks)
+- [Known Issues](#known-issues)
+- [I need more help](#i-need-more-help)
 
 
 
