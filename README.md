@@ -51,10 +51,10 @@ AB Express requires a center name to be configured. This should be the name of t
 Use the administrator configuration tool to enter a center name.
 
 ### `Windows service installed`
-This check verifies that the AB Express Windows service is installed on the system.
+This check verifies that the AB Express Windows service is installed on the system. When this check fails it means that the Windows service component of AB Express was not installed.
 
 #### How to fix:
-Install or re-install AB Express
+Install or re-install AB Express entirely.
 
 ### `Windows service is running`
 This check verifies that the AB Express Windows service is installed on the system and running.
