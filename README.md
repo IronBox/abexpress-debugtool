@@ -19,6 +19,7 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 
 ### Requirements
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
+- Administrator access is not required; however, many fixes require administrator-level access
 
 
 
