@@ -1,5 +1,5 @@
 # abexpress-debugtool
-This is the temporary home for the AB Express configuration checker tool. It looks for common issues with AB Express installations and configurations and provides suggested fixes. This site will always contain the latest version of the configuration checker tool.
+This is the temporary home for the AB Express configuration checker tool. It looks for common issues with AB Express installations and configurations and provides suggested fixes. 
 
 ![Tool screenshot](tool-screenshot.png)
 
