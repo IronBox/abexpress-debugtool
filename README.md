@@ -46,7 +46,7 @@ Use the administrator configuration tool to enter a valid workstation name.
 
 ### `Center name is configured`
 AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA
-
+*Note: As of version 2.x, a center name is no longer required*
 #### How to fix:
 Use the administrator configuration tool to enter a center name.
 
