@@ -169,7 +169,7 @@ If after trying suggested fixes you are still unable to get AB Express to functi
 
 1. Start the configuration checker tool
 2. Click the **Run** button to allow the tool to analyze the system.
-3. Click the Copy button, this will convenently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
+3. Click the Copy button, this will convienently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
 4. Send the AB Express team the diagnostics information
 
 ![Tool copy screenshot](copydiaginfo.png)
