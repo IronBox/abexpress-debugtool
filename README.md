@@ -112,7 +112,7 @@ Please ask the center's network IT team to help enable external access to the AB
 
 You can manually verify connectivity by:
 1. Open any modern browser, such as Chrome, Firefox, Edge. Please note that Internet Explorer is not recommended as it is no longer supported.
-2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) and you should see a screen like the following with no errors:
+2. Browse to [https://abexpress-api.advancedbionics.com/monitor/abexpress](https://abexpress-api.advancedbionics.com/monitor/abexpress)   (REST API v2) or [https://dx-api.ironbox.app/monitor/abexpress](https://dx-api.ironbox.app/monitor/abexpress) (REST API v1) and you should see a screen like the following with no errors:
 
 ![Tool screenshot](ping-confirm.png)
 
