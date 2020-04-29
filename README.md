@@ -24,7 +24,7 @@ This site is packaged with the latest version of the AB Express configuration to
 4. Run **ABExpressConfigCheckerTool.exe** 
 5. Click the Run button to start configuration checking (it may take a few moments to complete execution of tests)
 
-Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue.
+Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue. Re-run the tool after you have fixed the issue to verify the fix.
 
 ![Tool with suggested fix screenshot](suggested-fix.png)
 
