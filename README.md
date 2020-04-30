@@ -5,6 +5,7 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ## Quick Links
 - [Installation and Usage](#installation-and-usage)
+- [Video Tutorial](#video-tutorial)
 - [Automated Checks](#automated-checks)
 - [Known Issues](#known-issues)
 - [I need more help](#i-need-more-help)
