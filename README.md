@@ -31,8 +31,8 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
 - Administrator access is not required; however, many fixes require administrator-level access
 
-
-
+## Video Tutorial
+A video tutorial on how to use the AB Express configuration checker tool can be found by [clicking here](https://1drv.ms/v/s!AvumAN_zgZ2wgYEu2F9OccQJSxWKeQ?e=oDbQKh).
 
 ## Automated Checks
 The configuration checker tool checks for the following common issues. Please note that the fix for all of the following will require administrative privileges on the system.
