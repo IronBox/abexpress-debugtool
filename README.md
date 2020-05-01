@@ -3,21 +3,28 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ![Tool screenshot](tool-screenshot.png)
 
+## Quick Links
+- [Installation and Usage](#installation-and-usage)
+- [Video Tutorial](#video-tutorial)
+- [Automated Checks](#automated-checks)
+- [Known Issues](#known-issues)
+- [I need more help](#i-need-more-help)
+
+
 
 ## Installation and Usage
 ````
-The latest version of the tool is 1.0.0.5
+The latest version of the tool is 1.0.0.6
 ````
 
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
 
-1. Click on the green **Clone or download** button on the top-right
-2. Select **Download ZIP**, this will download this entire guide and the tool.
-3. Unzip the ZIP archive into a folder on the system that you troubleshooting AB Express on. The tool will be the folder `configchecktool`.
-4. Run **ABExpressConfigCheckerTool.exe** 
-5. Click the Run button to start configuration checking (it may take a few moments to complete execution of tests)
+1. Click on the green **Clone or download** button on the top-right and select **Download ZIP**, this will download this entire guide and the tool OR you can just [click this link](https://github.com/IronBox/abexpress-debugtool/archive/master.zip).
+2. Unzip the ZIP archive into a folder on the system that you troubleshooting AB Express on. The tool will be the folder `configchecktool`.
+3. Run **ABExpressConfigCheckerTool.exe** 
+4. Click the Run button to start configuration checking (it may take a few moments to complete execution of tests)
 
-Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue.
+Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue. Re-run the tool after you have fixed the issue to verify the fix.
 
 ![Tool with suggested fix screenshot](suggested-fix.png)
 
@@ -25,8 +32,8 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
 - Administrator access is not required; however, many fixes require administrator-level access
 
-
-
+## Video Tutorial
+A video tutorial on how to use the AB Express configuration checker tool can be found by [clicking here](https://1drv.ms/v/s!AvumAN_zgZ2wgYEu2F9OccQJSxWKeQ?e=oDbQKh).
 
 ## Automated Checks
 The configuration checker tool checks for the following common issues. Please note that the fix for all of the following will require administrative privileges on the system.
@@ -45,8 +52,9 @@ Each AB Express requires a workstation name. It can be anything, such as the nam
 Use the administrator configuration tool to enter a valid workstation name.
 
 ### `Center name is configured`
-AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA
+AB Express requires a center name to be configured. This should be the name of the health care provider, such as "UCLA"
 
+*Note: As of version 2.x, a center name is no longer required*
 #### How to fix:
 Use the administrator configuration tool to enter a center name.
 
@@ -87,6 +95,18 @@ To fix this, do the following (requires administrator privileges):
 3. Right click on the service named **AB Express Client Service** and select Properties.
 4. Change the **Startup Type** to **Automatic**
 5. Start the service if it is not already started
+
+### `Windows service uses correct startup account`
+The AB Express service requires LocalSystem as its startup account, because it requires special privileges for accessing and modifying certain AB SoundWave and other backup files.
+
+#### How to fix:
+To fix this, do the following (requires administrator privileges):
+
+1. Press the Windows key
+2. Run "services.msc".
+3. Right click on the service named **AB Express Client Service** and select Properties.
+4. Change the **Logon as** to **System or LocalSystem**
+5. Restart the service
 
 ### `Agent has been configured`
 This check verifies that the AB Express service has been configured with the administration tool.
@@ -163,12 +183,12 @@ You may need to work with the center's IT team to do this (recommended) as they 
 
 ![Tool installer screenshot](64bitinstaller.png)
 
-## I still need help!
+## I need more help!
 If after trying suggested fixes you are still unable to get AB Express to function, please contact the AB Express team. Before you do, please run the following steps which will provide the team with the necessary diagnostics information:
 
 1. Start the configuration checker tool
 2. Click the **Run** button to allow the tool to analyze the system.
-3. Click the Copy button, this will convenently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
+3. Click the Copy button, this will convienently copy the diagnostics information to the system clipboard (which you can save to a file or paste into an email)
 4. Send the AB Express team the diagnostics information
 
 ![Tool copy screenshot](copydiaginfo.png)
