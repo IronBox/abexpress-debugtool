@@ -14,7 +14,7 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ## Installation and Usage
 ````
-The latest version of the tool is 1.0.0.6
+The latest version of the tool is 1.0.0.7
 ````
 
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
@@ -177,6 +177,15 @@ AB Express requires Microsoft .NET Framework 4.6.1 or higher to function. The th
 Please install the latest version of the .NET Framework from [Microsoft .NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework).
 
 You may need to work with the center's IT team to do this (recommended) as they will have software policies that need to be followed.
+
+### `Security protocols disabled` or `Security protocols (default) disabled`
+AB Express requires certain security protocols to be enabled by the operating system, namely TLS1.2 or above. If these protocols are disabled explicitly or by default, it will affect the ability of AB Express to communicate securely to REST APIs.
+
+#### How to fix:
+Please reach out to the AB Express team if you see this warning and they will let you know if the disabled protocol will affect AB Express or not. If it does, work with the center's IT team to determine if TLS1.2 or higher can be enabled by their software policy. 
+
+Please refer to [Microsoft's documentation](https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings#tls-12) for information on how to enable security protocols by the registry.
+
 
 ## Known Issues
 - The 1.0.0.73 AB Express client installer is 64-bit only, and will not install on Windows 32-bit (this issue is fixed for future versions of AB Express)
