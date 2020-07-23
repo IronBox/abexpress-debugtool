@@ -28,6 +28,12 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 
 ![Tool with suggested fix screenshot](suggested-fix.png)
 
+### Command-line (Advanced)
+If you prefer, you can run the tool from the command line. Simply specify the /console switch to run tests. Test raw data will be copied into your clipboard automatically.
+````
+ABExpressConfigCheckTool.exe /console
+````
+
 ### Requirements
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
 - Administrator access is not required; however, many fixes require administrator-level access
