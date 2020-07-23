@@ -14,7 +14,7 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ## Installation and Usage
 ````
-The latest version of the tool is 1.0.0.7
+The latest version of the tool is 2.0.1.31b
 ````
 
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
