@@ -31,7 +31,7 @@ Any check that has failed will be shown in red. Click on any failed check to vie
 ### Command-line (Advanced)
 If you prefer, you can run the tool from the command line. Simply specify the /console switch to run tests. Test raw data will be copied into your clipboard automatically.
 ````
-ABExpressConfigCheckTool.exe /console
+ABExpressConfigCheckerTool.exe /console
 ````
 
 ### Requirements
