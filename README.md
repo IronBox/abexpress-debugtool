@@ -192,6 +192,12 @@ Please reach out to the AB Express team if you see this warning and they will le
 
 Please refer to [Microsoft's documentation](https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings#tls-12) for information on how to enable security protocols by the registry.
 
+### `REST API HTTP GET test` or `REST API HTTP POST test`
+AB Express requires the ability to make HTTP GET and POST calls to the REST API servers (https://dx-api.ironbox.app for v1 and https://abexpress-api.advancedbionics.com for v2) to function correctly. 
+
+#### How to fix:
+Please ensure that egress HTTP GET and POST requests are not blocked by workstation or perimeter firewalls. You may need to work with your IT support team to configure this.
+
 
 ## Known Issues
 - The 1.0.0.73 AB Express client installer is 64-bit only, and will not install on Windows 32-bit (this issue is fixed for future versions of AB Express)
