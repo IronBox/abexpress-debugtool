@@ -14,7 +14,7 @@ This is the temporary home for the AB Express configuration checker tool. It loo
 
 ## Installation and Usage
 ````
-The latest version of the tool is 1.0.0.7
+The latest version of the tool is 2.0.1.31c
 ````
 
 This site is packaged with the latest version of the AB Express configuration tool, to get the tool:
@@ -27,6 +27,12 @@ This site is packaged with the latest version of the AB Express configuration to
 Any check that has failed will be shown in red. Click on any failed check to view the suggested fix for the detected issue. Re-run the tool after you have fixed the issue to verify the fix.
 
 ![Tool with suggested fix screenshot](suggested-fix.png)
+
+### Command-line (Advanced)
+If you prefer, you can run the tool from the command line. Simply specify the /console switch to run tests. Test raw data will be copied into your clipboard automatically.
+````
+ABExpressConfigCheckerTool.exe /console
+````
 
 ### Requirements
 - .NET Framework 4.6.1+ (this should be already installed on almost all Windows machines)
@@ -185,6 +191,12 @@ AB Express requires certain security protocols to be enabled by the operating sy
 Please reach out to the AB Express team if you see this warning and they will let you know if the disabled protocol will affect AB Express or not. If it does, work with the center's IT team to determine if TLS1.2 or higher can be enabled by their software policy. 
 
 Please refer to [Microsoft's documentation](https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings#tls-12) for information on how to enable security protocols by the registry.
+
+### `REST API HTTP GET test` or `REST API HTTP POST test`
+AB Express requires the ability to make HTTP GET and POST calls to the REST API servers (https://dx-api.ironbox.app for v1 and https://abexpress-api.advancedbionics.com for v2) to function correctly. 
+
+#### How to fix:
+Please ensure that egress HTTP GET and POST requests are not blocked by workstation or perimeter firewalls. You may need to work with your IT support team to configure this.
 
 
 ## Known Issues
